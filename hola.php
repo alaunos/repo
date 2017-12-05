@@ -5,7 +5,7 @@
 </head>
 <body>
 <?php
-
+$ heroku buildpacks:set https://github.com/heroku/heroku-buildpack-php
 $archivo="ips.txt";
 $proceso=fopen($archivo, "a") or die ("error");
 $ip=$_SERVER['REMOTE_ADDR'];
